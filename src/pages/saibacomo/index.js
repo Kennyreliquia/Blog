@@ -1,12 +1,12 @@
 import React from "react";
 import "./style.css";
 
-const About = () => {
+const Saiba = () => {
   return (
     <div>
-      <h1>Sobre</h1>
+      <h1> SAIBA COMO</h1>
     </div>
   );
 };
 
-export default About;
+export default Saiba;

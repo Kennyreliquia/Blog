@@ -1,12 +1,12 @@
 import React from "react";
 import "./style.css";
 
-const About = () => {
+const Contacts = () => {
   return (
     <div>
-      <h1>Sobre</h1>
+      <h1> CONTACTOS</h1>
     </div>
   );
 };
 
-export default About;
+export default Contacts;

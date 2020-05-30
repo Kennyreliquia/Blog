@@ -1,12 +1,12 @@
 import React from "react";
 import "./style.css";
 
-const About = () => {
+const Forum = () => {
   return (
     <div>
-      <h1>Sobre</h1>
+      <h1> FORÚM</h1>
     </div>
   );
 };
 
-export default About;
+export default Forum;
