@@ -1,335 +1,287 @@
 import React from "react";
 import "./style.css";
 
+import image1 from "../../assets/images/news/health/image1.png";
+import image3 from "../../assets/images/banner-image/image3.png";
+import tech2 from "../../assets/images/news/tech/tech02.png";
+import tech3 from "../../assets/images/news/tech/tech1.png";
+import tech4 from "../../assets/images/news/tech/image5.png";
+import tech5 from "../../assets/images/news/lifestyle/image2.png";
+import life from "../../assets/images/news/lifestyle/image1.jpg";
+import life1 from "../../assets/images/news/fashion/image3.png";
+
+import tech7 from "../../assets/images/news/tech/tech02.png";
+
+import Socail from "../../components/Main/social";
+import Category from "../../components/Main/category";
+
 const Home = () => {
   return (
     <div>
-      <div class="gap-30"></div>
+      <div className="gap-30" />
 
-      <section class="featured-post-area no-padding">
-        <div class="container">
-          <div class="row ts-gutter-20">
-            <div class="col-lg-7 col-md-12 pad-r">
-              <div
-                id="featured-slider"
-                class="owl-carousel owl-theme featured-slider"
-              >
-                <div
-                  class="item post-overaly-style"
-                  style={
-                    "background-image:url(images/news/lifestyle/image1.jpg)"
-                  }
-                >
-                  <div class="featured-post">
-                    <a href="#" class="image-link">
-                      &nbsp;
-                    </a>
-                    <div class="overlay-post-content">
-                      <div class="post-content">
-                        <div class="grid-category">
-                          <a class="post-cat fashion" href="#">
-                            Fashion
-                          </a>
-                          <a class="post-cat lifestyle" href="#">
-                            Lifestyle
-                          </a>
-                        </div>
-
-                        <h2 class="post-title title-lg">
-                          <a href="#">
-                            Netcix cuts out the chill with an integrated trainer
-                            on running
-                          </a>
-                        </h2>
-                        <div class="post-meta">
-                          <ul>
-                            <li>
-                              <a href="#">
-                                <i class="fa fa-user"></i> John Wick
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <i class="icon icon-clock"></i> 20 July, 2020
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#" class="view">
-                                <i class="icon icon-fire"></i> 354k
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="item post-overaly-style"
-                  style="background-image:url(images/news/fashion/image3.png)"
-                >
-                  <div class="featured-post">
-                    <a href="#" class="image-link">
-                      &nbsp;
-                    </a>
-                    <div class="overlay-post-content">
-                      <div class="post-content">
-                        <div class="grid-category">
-                          <a class="post-cat fashion" href="#">
-                            Fashion
-                          </a>
-                          <a class="post-cat sports" href="#">
-                            Sports
-                          </a>
-                        </div>
-
-                        <h2 class="post-title title-lg">
-                          <a href="#">
-                            Netcix cuts out the chill with an integrated trainer
-                            on running
-                          </a>
-                        </h2>
-                        <div class="post-meta">
-                          <ul>
-                            <li>
-                              <a href="#">
-                                <i class="fa fa-user"></i> John Wick
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <i class="icon icon-clock"></i> 20 July, 2020
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#" class="view">
-                                <i class="icon icon-fire"></i> 354k
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="item post-overaly-style"
-                  style="background-image:url(images/news/tech/image5.png)"
-                >
-                  <div class="featured-post">
-                    <a href="#" class="image-link">
-                      &nbsp;
-                    </a>
-                    <div class="overlay-post-content">
-                      <div class="post-content">
-                        <div class="grid-category">
-                          <a class="post-cat fashion" href="#">
-                            Fashion
-                          </a>
-                          <a class="post-cat lifestyle" href="#">
-                            Lifestyle
-                          </a>
-                        </div>
-
-                        <h2 class="post-title title-lg">
-                          <a href="#">
-                            Netcix cuts out the chill with an integrated trainer
-                            on running
-                          </a>
-                        </h2>
-                        <div class="post-meta">
-                          <ul>
-                            <li>
-                              <a href="#">
-                                <i class="fa fa-user"></i> John Wick
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <i class="icon icon-clock"></i> 20 July, 2020
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#" class="view">
-                                <i class="icon icon-fire"></i> 354k
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="item post-overaly-style"
-                  style="background-image:url(images/news/lifestyle/image2.png)"
-                >
-                  <div class="featured-post">
-                    <a href="#" class="image-link">
-                      &nbsp;
-                    </a>
-                    <div class="overlay-post-content">
-                      <div class="post-content">
-                        <div class="grid-category">
-                          <a class="post-cat health" href="#">
-                            Health
-                          </a>
-                          <a class="post-cat lifestyle" href="#">
-                            Lifestyle
-                          </a>
-                        </div>
-
-                        <h2 class="post-title title-lg">
-                          <a href="#">
-                            Netcix cuts out the chill with an integrated trainer
-                            on running
-                          </a>
-                        </h2>
-                        <div class="post-meta">
-                          <ul>
-                            <li>
-                              <a href="#">
-                                <i class="fa fa-user"></i> John Wick
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#">
-                                <i class="icon icon-clock"></i> 20 July, 2020
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#" class="view">
-                                <i class="icon icon-fire"></i> 354k
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-5 col-md-12 pad-l">
-              <div class="row ts-gutter-20">
-                <div class="col-md-12">
-                  <div
-                    class="post-overaly-style post-md ml-8"
-                    style="background-image:url(images/news/lifestyle/image2.png)"
-                  >
-                    <div class="post-content">
-                      <a class="post-cat lifestyle" href="#">
-                        Lifestyle
-                      </a>
-                      <h2 class="post-title title-md">
-                        <a href="#">
-                          Nancy Zhang a Chinese busy woman and social media
-                        </a>
-                      </h2>
-                      <div class="post-meta">
-                        <ul>
-                          <li>
-                            <a href="#">
-                              <i class="fa fa-user"></i> John Wick
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <i class="icon icon-clock"></i> 20 July, 2020
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-12">
-                  <div
-                    class="post-overaly-style post-sm overlay-primary  ml-8"
-                    style="background-image:url(images/news/health/image1.png)"
-                  >
-                    <div class="post-content">
-                      <a class="post-cat health" href="#">
-                        Health
-                      </a>
-                      <h2 class="post-title title-md">
-                        <a href="#">
-                          Nancy Zhang a Chinese busy woman and social media
-                        </a>
-                      </h2>
-                      <div class="post-meta">
-                        <ul>
-                          <li>
-                            <a href="#">
-                              <i class="fa fa-user"></i> John Wick
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <i class="icon icon-clock"></i> 20 July, 2020
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <div class="gap-30"></div>
-
-      <div class="block-wrapper no-padding">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="banner-img text-center">
+      <div className="block-wrapper no-padding">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="banner-img text-center">
                 <a href="index-2.html">
-                  <img
-                    class="img-fluid"
-                    src="images/banner-image/image3.png"
-                    alt=""
-                  />
+                  <img className="img-fluid" src={image3} />
                 </a>
               </div>
             </div>
+            {/* col end */}
           </div>
+          {/* row  end */}
         </div>
+        {/* container end */}
       </div>
-      <section class="block-wrapper pb-lg-0">
-        <div class="container">
-          <div class="row ts-gutter-30">
-            <div class="col-lg-8 col-md-12">
-              <div class="block">
-                <h2 class="block-title block-title-tech">
-                  <span class="title-angle-shap"> POSTs </span>
-                </h2>
-                <div class="post-block-style">
-                  <div class="row align-items-center">
-                    <div class="col-md-6">
-                      <div class="post-thumb">
-                        <img src="images/news/tech/tech02.png" alt="" />
+      <div className="gap-30" />
+      <section className="featured-post-area no-padding">
+        <div className="container">
+          <div className="row ts-gutter-20">
+            <div className="col-lg-7 col-md-12 pad-r">
+              <div
+                id="featured-slider"
+                className="owl-carousel active owl-theme featured-slider"
+              >
+                <div
+                  className="item active  post-overaly-style"
+                  style={{
+                    backgroundImage: `url(${life})`,
+                  }}
+                >
+                  <div className="featured-post">
+                    <a href="#" className="image-link">
+                      &nbsp;
+                    </a>
+                    <div className="overlay-post-content">
+                      <div className="post-content">
+                        <div className="grid-category">
+                          <a className="post-cat fashion" href="#">
+                            Fashion
+                          </a>
+                          <a className="post-cat lifestyle" href="#">
+                            Lifestyle
+                          </a>
+                        </div>
+                        <h2 className="post-title title-lg">
+                          <a href="#">
+                            Netcix cuts out the chill with an integrated trainer
+                            on running
+                          </a>
+                        </h2>
+                        <div className="post-meta">
+                          <ul>
+                            <li>
+                              <a href="#">
+                                <i className="fa fa-user" /> John Wick
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i className="icon icon-clock" /> 20 July, 2020
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#" className="view">
+                                <i className="icon icon-fire" /> 354k
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
-                    <div class="col-md-6">
-                      <div class="post-content">
-                        <h2 class="post-title title-md">
+                  </div>
+                  {/*/ Featured post end */}
+                </div>
+                {/* Item 1 end */}
+                <div
+                  className="item post-overaly-style"
+                  style={{
+                    backgroundImage: `url(${life1})`,
+                  }}
+                >
+                  <div className="featured-post">
+                    <a href="#" className="image-link">
+                      &nbsp;
+                    </a>
+                    <div className="overlay-post-content">
+                      <div className="post-content">
+                        <div className="grid-category">
+                          <a className="post-cat fashion" href="#">
+                            Fashion
+                          </a>
+                          <a className="post-cat sports" href="#">
+                            Sports
+                          </a>
+                        </div>
+                        <h2 className="post-title title-lg">
+                          <a href="#">
+                            Netcix cuts out the chill with an integrated trainer
+                            on running
+                          </a>
+                        </h2>
+                        <div className="post-meta">
+                          <ul>
+                            <li>
+                              <a href="#">
+                                <i className="fa fa-user" /> John Wick
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i className="icon icon-clock" /> 20 July, 2020
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#" className="view">
+                                <i className="icon icon-fire" /> 354k
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/*/ Featured post end */}
+                </div>
+                {/* Item 1 end */}
+              </div>
+              {/* Featured owl carousel end*/}
+            </div>
+            {/* Col 7 end */}
+            <div className="col-lg-5 col-md-12 pad-l">
+              <div className="row ts-gutter-20">
+                <div className="col-md-12">
+                  <div
+                    className="post-overaly-style post-md ml-8"
+                    style={{
+                      backgroundImage: `url(${tech5})`,
+                    }}
+                  >
+                    <div className="post-content">
+                      <a className="post-cat lifestyle" href="#">
+                        Lifestyle
+                      </a>
+                      <h2 className="post-title title-md">
+                        <a href="#">
+                          Nancy Zhang a Chinese busy woman and social media
+                        </a>
+                      </h2>
+                      <div className="post-meta">
+                        <ul>
+                          <li>
+                            <a href="#">
+                              <i className="fa fa-user" /> John Wick
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i className="icon icon-clock" /> 20 July, 2020
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    {/* Post content end */}
+                  </div>
+                  {/* Post Overaly end */}
+                </div>
+                {/* Col end */}
+                <div className="col-md-12">
+                  <div
+                    className="post-overaly-style post-sm overlay-primary  ml-8"
+                    style={{
+                      backgroundImage: `url(${image1})`,
+                    }}
+                  >
+                    <div className="post-content">
+                      <a className="post-cat health" href="#">
+                        Health
+                      </a>
+                      <h2 className="post-title title-md">
+                        <a href="#">
+                          Nancy Zhang a Chinese busy woman and social media
+                        </a>
+                      </h2>
+                      <div className="post-meta">
+                        <ul>
+                          <li>
+                            <a href="#">
+                              <i className="fa fa-user" /> John Wick
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i className="icon icon-clock" /> 20 July, 2020
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    {/* Post content end */}
+                  </div>
+                  {/* Post Overaly end */}
+                </div>
+                {/* Col end */}
+              </div>
+              {/* row end */}
+            </div>
+            {/* Col 5 end */}
+          </div>
+        </div>
+      </section>
+      <div className="gap-30" />
+      {/* ad banner start*/}
+      <div className="block-wrapper no-padding">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="banner-img text-center">
+                <a href="index-2.html">
+                  <img className="img-fluid" src={image3} />
+                </a>
+              </div>
+            </div>
+            {/* col end */}
+          </div>
+          {/* row  end */}
+        </div>
+        {/* container end */}
+      </div>
+      <section className="block-wrapper pb-lg-0">
+        <div className="container">
+          <div className="row ts-gutter-30">
+            <div className="col-lg-8 col-md-12">
+              {/*- Featured Tab startet */}
+              <div className="block">
+                <h2 className="block-title block-title-tech">
+                  <span className="title-angle-shap"> POSTs </span>
+                </h2>
+                <div className="post-block-style">
+                  <div className="row align-items-center">
+                    <div className="col-md-6">
+                      <div className="post-thumb">
+                        <img src={tech2} />
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="post-content">
+                        <h2 className="post-title title-md">
                           <a href="#">
                             Ratcliffe to be Director of nation intelligence
                             Trump ignored
                           </a>
                         </h2>
-                        <div class="post-meta mb-7">
-                          <span class="post-author">
+                        <div className="post-meta mb-7">
+                          <span className="post-author">
                             <a href="#">
-                              <i class="fa fa-user"></i> John Doe
+                              <i className="fa fa-user" /> John Doe
                             </a>
                           </span>
-                          <span class="post-date">
-                            <i class="fa fa-clock-o"></i> 29 July, 2020
+                          <span className="post-date">
+                            <i className="fa fa-clock-o" /> 29 July, 2020
                           </span>
                         </div>
                         <p>
@@ -341,319 +293,187 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-
-                <div class="gap-30"></div>
-
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="list-post-block">
-                      <ul class="list-post">
+                <div className="gap-30" />
+                <div className="row">
+                  <div className="col-md-6">
+                    <div className="list-post-block">
+                      <ul className="list-post">
                         <li>
-                          <div class="post-block-style media">
-                            <div class="post-thumb">
+                          <div className="post-block-style media">
+                            <div className="post-thumb">
                               <a href="#">
-                                <img
-                                  class="img-fluid"
-                                  src="images/news/tech/tech1.png"
-                                  alt=""
-                                />
+                                <img className="img-fluid" src={tech3} />
                               </a>
                             </div>
-
-                            <div class="post-content media-body">
-                              <div class="grid-category">
-                                <a class="post-cat tech-color" href="#">
+                            {/* Post thumb end */}
+                            <div className="post-content media-body">
+                              <div className="grid-category">
+                                <a className="post-cat tech-color" href="#">
                                   Tech
                                 </a>
                               </div>
-                              <h2 class="post-title">
+                              <h2 className="post-title">
                                 <a href="#">
                                   Santino loganne legan an year old resident
                                 </a>
                               </h2>
-                              <div class="post-meta mb-7">
-                                <span class="post-date">
-                                  <i class="fa fa-clock-o"></i> 29 July, 2020
+                              <div className="post-meta mb-7">
+                                <span className="post-date">
+                                  <i className="fa fa-clock-o" /> 29 July, 2020
                                 </span>
                               </div>
                             </div>
+                            {/* Post content end */}
                           </div>
+                          {/* Post block style end */}
                         </li>
+                        {/* Li 1 end */}
                         <li>
-                          <div class="post-block-style media">
-                            <div class="post-thumb">
+                          <div className="post-block-style media">
+                            <div className="post-thumb">
                               <a href="#">
-                                <img
-                                  class="img-fluid"
-                                  src="images/news/tech/image5.png"
-                                  alt=""
-                                />
+                                <img className="img-fluid" src={tech4} />
                               </a>
                             </div>
-
-                            <div class="post-content media-body">
-                              <div class="grid-category">
-                                <a class="post-cat tech-color" href="#">
+                            {/* Post thumb end */}
+                            <div className="post-content media-body">
+                              <div className="grid-category">
+                                <a className="post-cat tech-color" href="#">
                                   Tech
                                 </a>
                               </div>
-                              <h2 class="post-title">
+                              <h2 className="post-title">
                                 <a href="#">
                                   Jennifer for a Lopez expanding her{" "}
                                 </a>
                               </h2>
-                              <div class="post-meta mb-7">
-                                <span class="post-date">
-                                  <i class="fa fa-clock-o"></i> 29 July, 2020
+                              <div className="post-meta mb-7">
+                                <span className="post-date">
+                                  <i className="fa fa-clock-o" /> 29 July, 2020
                                 </span>
                               </div>
                             </div>
+                            {/* Post content end */}
                           </div>
+                          {/* Post block style end */}
                         </li>
+                        {/* Li 2 end */}
                       </ul>
+                      {/* list-post end */}
                     </div>
                   </div>
-                  <div class="col-md-6">
-                    <div class="list-post-block">
-                      <ul class="list-post">
+                  {/* col end */}
+                  <div className="col-md-6">
+                    <div className="list-post-block">
+                      <ul className="list-post">
                         <li>
-                          <div class="post-block-style media">
-                            <div class="post-thumb">
+                          <div className="post-block-style media">
+                            <div className="post-thumb">
                               <a href="#">
-                                <img
-                                  class="img-fluid"
-                                  src="images/news/lifestyle/image4.png"
-                                  alt=""
-                                />
+                                <img className="img-fluid" src={tech7} />
                               </a>
                             </div>
-
-                            <div class="post-content media-body">
-                              <div class="grid-category">
-                                <a class="post-cat tech-color" href="#">
+                            {/* Post thumb end */}
+                            <div className="post-content media-body">
+                              <div className="grid-category">
+                                <a className="post-cat tech-color" href="#">
                                   Tech
                                 </a>
                               </div>
-                              <h2 class="post-title">
+                              <h2 className="post-title">
                                 <a href="#">
                                   The Chairman of the Intel ligence committee
                                 </a>
                               </h2>
-                              <div class="post-meta mb-7">
-                                <span class="post-date">
-                                  <i class="fa fa-clock-o"></i> 29 July, 2020
+                              <div className="post-meta mb-7">
+                                <span className="post-date">
+                                  <i className="fa fa-clock-o" /> 29 July, 2020
                                 </span>
                               </div>
                             </div>
+                            {/* Post content end */}
                           </div>
+                          {/* Post block style end */}
                         </li>
+                        {/* Li 1 end */}
                         <li>
-                          <div class="post-block-style media">
-                            <div class="post-thumb">
+                          <div className="post-block-style media">
+                            <div className="post-thumb">
                               <a href="#">
-                                <img
-                                  class="img-fluid"
-                                  src="images/news/lifestyle/image2.png"
-                                  alt=""
-                                />
+                                <img className="img-fluid" src={tech5} />
                               </a>
                             </div>
-
-                            <div class="post-content media-body">
-                              <div class="grid-category">
-                                <a class="post-cat tech-color" href="#">
+                            {/* Post thumb end */}
+                            <div className="post-content media-body">
+                              <div className="grid-category">
+                                <a className="post-cat tech-color" href="#">
                                   Tech
                                 </a>
                               </div>
-                              <h2 class="post-title">
+                              <h2 className="post-title">
                                 <a href="#">
                                   House last week that the move would Inject
                                 </a>
                               </h2>
-                              <div class="post-meta mb-7">
-                                <span class="post-date">
-                                  <i class="fa fa-clock-o"></i> 29 July, 2020
+                              <div className="post-meta mb-7">
+                                <span className="post-date">
+                                  <i className="fa fa-clock-o" /> 29 July, 2020
                                 </span>
                               </div>
                             </div>
+                            {/* Post content end */}
                           </div>
+                          {/* Post block style end */}
                         </li>
+                        {/* Li 2 end */}
                       </ul>
+                      {/* list-post end */}
                     </div>
                   </div>
+                  {/* col end */}
                 </div>
               </div>
-
-              <div class="gap-20"></div>
+              {/* Block Tech */}
+              <div className="gap-20" />
             </div>
-            <div class="col-lg-4">
-              <div class="">
-                <div class="sidebar">
-                  <div class="sidebar-widget social-widget">
-                    <h2 class="block-title">
-                      <span class="title-angle-shap"> Social</span>
-                    </h2>
-                    <div class="sidebar-social">
-                      <ul class="ts-social-list style2">
-                        <li class="ts-facebook">
-                          <a href="#">
-                            <i class="tsicon fa fa-facebook"></i>
-                            <div class="count">
-                              <b>12.5 k </b>
-                              <span>Likes</span>
-                            </div>
-                          </a>
-                        </li>
-                        <li class="ts-twitter">
-                          <a href="#">
-                            <i class="tsicon fa fa-twitter"></i>
-                            <div class="count">
-                              <b>12.5 k </b>
-                              <span>Follwers</span>
-                            </div>
-                          </a>
-                        </li>
-                        <li class="ts-youtube">
-                          <a href="#">
-                            <i class="tsicon fa fa-youtube-play"></i>
-                            <div class="count">
-                              <b>12.5 k </b>
-                              <span>Follwers</span>
-                            </div>
-                          </a>
-                        </li>
-                        <li class="ts-rss">
-                          <a href="#">
-                            <i class="tsicon fa fa-rss"></i>
-                            <div class="count">
-                              <b>12.5 k </b>
-                              <span>Follwers</span>
-                            </div>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
+            {/* Content Col end */}
+            <div className="col-lg-4">
+              <div>
+                <div className="sidebar">
+                  <Socail />
                 </div>
-
-                <div class="sidebar">
-                  <ul class="ts-category-list ts-category-list-sm">
-                    <li>
-                      <a
-                        href="#"
-                        style="background-image: url(images/news/category/category1.png)"
-                      >
-                        <span> Health </span>
-                        <span class="bar"></span>
-                        <span class="category-count">95</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        style="background-image: url(images/news/category/category2.png)"
-                      >
-                        <span> Travel </span>
-                        <span class="bar"></span>
-                        <span class="category-count">93</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        style="background-image: url(images/news/category/category3.png)"
-                      >
-                        <span> Sports </span>
-                        <span class="bar"></span>
-                        <span class="category-count">103</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        style="background-image: url(images/news/category/category4.png)"
-                      >
-                        <span> Fashion </span>
-                        <span class="bar"></span>
-                        <span class="category-count">60</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        style="background-image: url(images/news/category/category5.png)"
-                      >
-                        <span> Tech </span>
-                        <span class="bar"></span>
-                        <span class="category-count">30</span>
-                      </a>
-                    </li>
-                  </ul>
+                <div className="sidebar">
+                  <Category />
                 </div>
               </div>
+              {/* Sidebar Col end */}
             </div>
           </div>
+          {/* Row end */}
         </div>
+        {/* Container end */}
       </section>
-
-      <div class="block-wrapper no-padding">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="banner-img text-center">
+      {/* First block end */}
+      {/* ad banner start*/}
+      <div className="block-wrapper no-padding">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="banner-img text-center">
                 <a href="index-2.html">
-                  <img
-                    class="img-fluid"
-                    src="images/banner-image/image3.png"
-                    alt=""
-                  />
+                  <img className="img-fluid" src={image3} />
                 </a>
               </div>
             </div>
+            {/* col end */}
           </div>
+          {/* row  end */}
         </div>
+        {/* container end */}
       </div>
-
-      <div class="gap-50"></div>
-
-      <div class="newsletter-area">
-        <div class="container">
-          <div class="row ts-gutter-30 justify-content-center align-items-center">
-            <div class="col-lg-7 col-md-6">
-              <div class="footer-loto">
-                <a href="#">
-                  <img src="images/logos/logo-light.png" alt="" />
-                </a>
-              </div>
-            </div>
-
-            <div class="col-lg-5 col-md-6">
-              <div class="footer-newsletter">
-                <form action="#" method="post">
-                  <div class="email-form-group">
-                    <i
-                      class="news-icon fa fa-paper-plane"
-                      aria-hidden="true"
-                    ></i>
-                    <input
-                      type="email"
-                      name="EMAIL"
-                      class="newsletter-email"
-                      placeholder="Seu email"
-                      required
-                    />
-                    <input
-                      type="submit"
-                      class="newsletter-submit"
-                      value="Subscrever"
-                    />
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      {/* ad banner end*/}
+      <div className="gap-50" />
+      {/* ad banner start*/}
     </div>
   );
 };

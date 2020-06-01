@@ -4,9 +4,53 @@ import Img1 from "../../assets/images/news/tech/image5.png";
 import Img2 from "../../assets/images/news/tech/image5.png";
 import Baner from "../../assets/images/banner-image/image6.png";
 
+import logo from "../../assets/images/logos/logo-light.png";
+
 export default function Footer() {
   return (
     <div>
+      <div className="newsletter-area">
+        <div className="container">
+          <div className="row ts-gutter-30 justify-content-center align-items-center">
+            <div className="col-lg-7 col-md-6">
+              <div className="footer-loto">
+                <a href="#">
+                  <img src={logo} />
+                </a>
+              </div>
+            </div>
+            {/* col end */}
+            <div className="col-lg-5 col-md-6">
+              <div className="footer-newsletter">
+                <form action="#" method="post">
+                  <div className="email-form-group">
+                    <i
+                      className="news-icon fa fa-paper-plane"
+                      aria-hidden="true"
+                    />
+                    <input
+                      type="email"
+                      name="EMAIL"
+                      className="newsletter-email"
+                      placeholder="Seu email"
+                      required
+                    />
+                    <input
+                      type="submit"
+                      className="newsletter-submit"
+                      defaultValue="Subscrever"
+                    />
+                  </div>
+                </form>
+              </div>
+            </div>
+            {/* col end */}
+          </div>
+          {/* row  end */}
+        </div>
+        {/* container end */}
+      </div>
+
       <div className="ts-footer">
         <div className="container">
           <div className="row ts-gutter-30 justify-content-lg-between justify-content-center">
@@ -107,14 +151,13 @@ export default function Footer() {
                 </div>
               </div>
             </div>
+
             <div className="col-lg-3 col-md-6">
               <div className="footer-widtet post-widget">
                 <div className="widget-content">
-                  <div className="footer-ads">
-                    <a href="#">
-                      <img className="img-fluid" src={Baner} alt="" />
-                    </a>
-                  </div>
+                  <a href="#">
+                    <img className="img-fluid" src={Baner} />
+                  </a>
                 </div>
               </div>
             </div>
