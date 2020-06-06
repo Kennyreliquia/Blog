@@ -3,7 +3,16 @@ import Socail from "../../components/Main/social";
 import Category from "../../components/Main/category";
 import "./style.css";
 
+import cat1 from "../../assets/images/news/category/category1.png";
+import cat2 from "../../assets/images/news/category/category2.png";
+import cat3 from "../../assets/images/news/category/category3.png";
+
 const Doar = () => {
+  const category = [
+    { id: 1, title: "Health", articles: 10, img: cat1 },
+    { id: 2, title: "Tech", articles: 10, img: cat2 },
+    { id: 3, title: "Code .", articles: 10, img: cat3 },
+  ];
   return (
     <div>
       <div className="breadcrumb-section">
@@ -58,7 +67,7 @@ const Doar = () => {
               <p align="justify">
                 Se você tem um produto ou site que deseja mostrá-lo aos nossos
                 leitores, considere anunciar conosco, os detalhes da publicidade
-                podem ser encontrados <a href="#">aqui</a>.{" "}
+                podem ser encontrados <a>aqui</a>.{" "}
               </p>
               <p align="justify">Metódos de doação: </p>
               <p align="justify">
@@ -79,10 +88,10 @@ const Doar = () => {
             </div>
             {/* col-lg-8 */}
             <div className="col-lg-4">
-              <div className>
+              <div>
                 <div className="sidebar">
                   <Socail />
-                  <Category />
+                  <Category category={category} />
                 </div>
               </div>
               {/* Sidebar Col end */}
